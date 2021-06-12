@@ -21,7 +21,7 @@ _global_script_class_icons={
 [application]
 
 config/name="multi-galaxy"
-run/main_scene="res://KinematicBody2D.tscn"
+run/main_scene="res://Map.tscn"
 config/icon="res://icon.png"
 
 [gdnative]
