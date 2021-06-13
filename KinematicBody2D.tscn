@@ -79,6 +79,10 @@ shape = SubResource( 1 )
 
 [node name="Camera2D" type="Camera2D" parent="KinematicBody2D"]
 current = true
+limit_left = 0
+limit_top = -64
+limit_right = 3485
+limit_bottom = 3485
 drag_margin_h_enabled = true
 drag_margin_v_enabled = true
 smoothing_enabled = true
