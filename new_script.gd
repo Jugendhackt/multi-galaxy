@@ -3,7 +3,7 @@ extends KinematicBody2D
 
 export var speed = 50
 export var maxSpeed = 250
-export var friction = 0.85
+export var friction = 0.80
 
 var velocity = Vector2()
 
@@ -19,15 +19,19 @@ func get_input():
 		velocity.x *= friction
 	if Input.is_action_pressed("right"):
 		velocity.x += speed
+		$AnimationPlayer.play("Walk_Right")
 	if Input.is_action_pressed("left"):
 		velocity.x -= speed
+		$AnimationPlayer.play("Walk_Left")
 		
 	if (!Input.is_action_pressed("down") && !Input.is_action_pressed("up") || Input.is_action_pressed("down") && Input.is_action_pressed("up")):
 		velocity.y *= friction
 	if Input.is_action_pressed("down"):
 		velocity.y += speed
+		$AnimationPlayer.play("Walk_Down")
 	if Input.is_action_pressed("up"):
 		velocity.y -= speed
+		$AnimationPlayer.play("Walk_Up")
 	
 	if (velocity.x > maxSpeed):
 		velocity.x = maxSpeed
