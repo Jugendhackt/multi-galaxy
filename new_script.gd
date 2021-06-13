@@ -1,25 +1,43 @@
 
 extends KinematicBody2D
 
-export (int) var speed = 200
+export var speed = 50
+export var maxSpeed = 250
+export var friction = 0.85
 
 var velocity = Vector2()
 
 func get_input():
-	velocity = Vector2()
 	if Input.is_action_pressed("shiftl"):
-		speed = 300
+		maxSpeed = 500
+		speed = 100
 	else: 
-		speed = 200
+		maxSpeed = 230
+		speed = 50
+		
+	if (!Input.is_action_pressed("right") && !Input.is_action_pressed("left") || Input.is_action_pressed("right") && Input.is_action_pressed("left")):
+		velocity.x *= friction
 	if Input.is_action_pressed("right"):
-		velocity.x += 1
+		velocity.x += speed
 	if Input.is_action_pressed("left"):
-		velocity.x -= 1
+		velocity.x -= speed
+		
+	if (!Input.is_action_pressed("down") && !Input.is_action_pressed("up") || Input.is_action_pressed("down") && Input.is_action_pressed("up")):
+		velocity.y *= friction
 	if Input.is_action_pressed("down"):
-		velocity.y += 1
+		velocity.y += speed
 	if Input.is_action_pressed("up"):
-		velocity.y -= 1
-	velocity = velocity.normalized() * speed
+		velocity.y -= speed
+	
+	if (velocity.x > maxSpeed):
+		velocity.x = maxSpeed
+	if (velocity.x < -maxSpeed):
+		velocity.x = -maxSpeed
+		
+	if (velocity.y > maxSpeed):
+		velocity.y = maxSpeed
+	if (velocity.y < -maxSpeed):
+		velocity.y = -maxSpeed
 
 func _physics_process(delta):
 	get_input()
