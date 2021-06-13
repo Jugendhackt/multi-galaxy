@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Character sprites walking.png-6201cf24c22bcf97ed400d2f0b3ddf89.stex"
+path="res://.import/Supermarkt schild.png-4b370fcd092bd2e59a1ffd1f50522a18.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Character sprites walking.png"
-dest_files=[ "res://.import/Character sprites walking.png-6201cf24c22bcf97ed400d2f0b3ddf89.stex" ]
+source_file="res://assets/tilesets/Supermarkt schild.png"
+dest_files=[ "res://.import/Supermarkt schild.png-4b370fcd092bd2e59a1ffd1f50522a18.stex" ]
 
 [params]
 

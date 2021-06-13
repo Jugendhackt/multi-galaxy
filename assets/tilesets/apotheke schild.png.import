@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Character sprites walking.png-6201cf24c22bcf97ed400d2f0b3ddf89.stex"
+path="res://.import/apotheke schild.png-63328a9c1ebf41ae1269763a0a7d7071.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Character sprites walking.png"
-dest_files=[ "res://.import/Character sprites walking.png-6201cf24c22bcf97ed400d2f0b3ddf89.stex" ]
+source_file="res://assets/tilesets/apotheke schild.png"
+dest_files=[ "res://.import/apotheke schild.png-63328a9c1ebf41ae1269763a0a7d7071.stex" ]
 
 [params]
 

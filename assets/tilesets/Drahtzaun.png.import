@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Character sprites walking.png-6201cf24c22bcf97ed400d2f0b3ddf89.stex"
+path="res://.import/Drahtzaun.png-4669736736b1d84a87a6cb740f602add.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Character sprites walking.png"
-dest_files=[ "res://.import/Character sprites walking.png-6201cf24c22bcf97ed400d2f0b3ddf89.stex" ]
+source_file="res://assets/tilesets/Drahtzaun.png"
+dest_files=[ "res://.import/Drahtzaun.png-4669736736b1d84a87a6cb740f602add.stex" ]
 
 [params]
 
